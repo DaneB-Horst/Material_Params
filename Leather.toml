@@ -1,0 +1,20 @@
+[material]
+object_type = "SHELL"
+shell_model = "BARAFF_WITKIN"
+
+# Extremely rigid against stretching forces
+shell_young_modulus = 300.0
+shell_possion_ratio = 0.4
+
+# Very high density for heavy coats or boots
+shell_density = 0.85
+
+# High bending resistance creates massive, smooth, sweeping folds
+bend = 2.5
+
+# Polished leather slides reasonably well over other surfaces
+friction = 0.3
+
+# Leather has almost no functional strain elasticity
+enable_strain_limit = true
+strain_limit = 0.002

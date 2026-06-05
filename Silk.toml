@@ -1,0 +1,22 @@
+[material]
+object_type = "SHELL"
+shell_model = "BARAFF_WITKIN"
+
+# Silk is highly flexible; lower this significantly to let gravity stretch/drape it
+shell_young_modulus = 15.0
+
+# Standard poisson ratio for woven textiles
+shell_possion_ratio = 0.35
+
+# Drop density if the cloth feels like it's dropping like wet leather
+shell_density = 0.12
+
+# Crucial: Drop bending close to zero to get fluid, tiny, silk-like wrinkles
+bend = 0.005
+
+# Silk is slippery. Lower friction allows it to slide cleanly over colliders
+friction = 0.1
+
+# Enable strict strain bounds (A signature feature of the ZOZO solver)
+enable_strain_limit = true
+strain_limit = 0.01 

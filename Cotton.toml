@@ -1,0 +1,20 @@
+[material]
+object_type = "SHELL"
+shell_model = "BARAFF_WITKIN"
+
+# Moderate stiffness ensures it holds shape but reacts well to gravity
+shell_young_modulus = 45.0
+shell_possion_ratio = 0.3
+
+# Standard organic weave density
+shell_density = 0.22
+
+# Moderate bend stiffness creates defined, soft creases (not micro-folds like silk)
+bend = 0.15
+
+# Medium friction prevents it from instantly sliding off a character's shoulders
+friction = 0.45
+
+# Standard cotton clothing allows very minor give
+enable_strain_limit = true
+strain_limit = 0.03

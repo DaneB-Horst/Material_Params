@@ -1,0 +1,20 @@
+[material]
+object_type = "SHELL"
+shell_model = "BARAFF_WITKIN"
+
+# High tensile resistance prevents heavy jeans from elongating
+shell_young_modulus = 180.0
+shell_possion_ratio = 0.25
+
+# Heavy, dense weave
+shell_density = 0.45
+
+# High bend value forces wide, sharp, structured wrinkles
+bend = 1.2
+
+# Rough textile surface creates strong self-contact friction
+friction = 0.65
+
+# Denim barely stretches under its own structural mass
+enable_strain_limit = true
+strain_limit = 0.005

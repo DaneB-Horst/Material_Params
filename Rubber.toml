@@ -1,0 +1,20 @@
+[material]
+object_type = "SHELL"
+shell_model = "BARAFF_WITKIN"
+
+# Lower modulus allows it to easily deform and yield under load
+shell_young_modulus = 8.0
+shell_possion_ratio = 0.48
+
+# Moderate to high density depending on rubber thickness
+shell_density = 0.95
+
+# Low bend allows it to warp organically without forming crisp fabric creases
+bend = 0.08
+
+# Extremely high friction; rubber grabs surfaces and grips tightly
+friction = 0.85
+
+# Loosen constraints to allow the material to visibly stretch out 
+enable_strain_limit = true
+strain_limit = 0.35 
